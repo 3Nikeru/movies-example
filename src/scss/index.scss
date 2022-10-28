@@ -2,11 +2,25 @@
 @import "./header";
 @import "./movie";
 
+@font-face {
+    font-family: BebasNeue;
+    src: url(../assets/fonts/BebasNeue-Regular.ttf);
+}
+
 html, body{
     margin: 0;
     padding: 0;
+    background-color: black;
+    color: #ffffff;
+    font-family: BebasNeue;
 }
 main{
-    padding: 0 10px;
+    h2{
+        text-align: center;
+        padding: 10px;
+        text-transform: uppercase;
+        background-color: whitesmoke;
+        color: #000000;
+    }
 }
 

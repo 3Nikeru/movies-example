@@ -1,4 +1,15 @@
 header{
-    background-color: aqua;
-    margin-bottom: 10px;
+    background-color:rgba(255, 150, 32, 0.8705882353);
+    margin-bottom: 30px;
+    padding: 20px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+        img{
+            width: 150px;
+            height: 115px;
+        }
+    }
 }
