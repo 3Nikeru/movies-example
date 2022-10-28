@@ -1,0 +1,32 @@
+.popular{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .movie{
+        width: 240px;
+        margin-bottom: 10px;
+        text-align: center;
+        position: relative;
+        .title{
+            font-weight: 800;
+        }
+        .date{
+            color: #616161;
+        }
+        .popularity{
+            font-weight: 600;
+            position: absolute;
+            top: -10px;
+            left: 0;
+            z-index: 2;
+            background-color: #ff9620de;
+            border: 3px solid black;
+            border-radius: 50%;
+            padding: 5px;
+            span{
+                font-size: 14px;
+            }
+        }
+    }
+    
+}

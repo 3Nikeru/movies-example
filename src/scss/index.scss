@@ -1,2 +1,12 @@
 @import "~normalize.css";
+@import "./header";
+@import "./movie";
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+main{
+    padding: 0 10px;
+}
 
