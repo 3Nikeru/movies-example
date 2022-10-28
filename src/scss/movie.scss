@@ -1,4 +1,4 @@
-.popular, .top_rated{
+.popular, .top_rated, .upcoming{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -7,6 +7,9 @@
         margin-bottom: 10px;
         text-align: center;
         position: relative;
+        img{
+            height: 280px;
+        }
         .title{
             font-weight: 800;
         }
