@@ -1,6 +1,6 @@
-.popular{
+.popular, .top_rated{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     .movie{
         width: 240px;
