@@ -1,0 +1,23 @@
+@import "./color";
+
+@font-face {
+    font-family: BebasNeue;
+    src: url(../assets/fonts/BebasNeue-Regular.ttf);
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #ffffff;
+    font-family: BebasNeue;
+}
+main{
+    h2{
+        text-align: center;
+        padding: 10px;
+        text-transform: uppercase;
+        background-color: $ws;
+        color: #000000;
+    }
+}

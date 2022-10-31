@@ -1,8 +1,11 @@
+@import "./movie";
+@import "./color";
+
 header{
-    background-color:rgba(255, 150, 32, 0.8705882353);
+    background-color: $color_brand;
     margin-bottom: 30px;
     padding: 20px;
-    color: black;
+    color: $black;
     display: flex;
     justify-content: space-between;
     align-items: center;
