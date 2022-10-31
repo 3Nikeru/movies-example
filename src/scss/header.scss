@@ -1,0 +1,18 @@
+@import "./movie";
+@import "./color";
+
+header{
+    background-color: $color_brand;
+    margin-bottom: 30px;
+    padding: 20px;
+    color: $black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+        img{
+            width: 150px;
+            height: 115px;
+        }
+    }
+}

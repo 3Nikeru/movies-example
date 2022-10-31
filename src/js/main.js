@@ -1,1 +1,5 @@
-export const {API_KEY} = process.env;
+import {getMovies} from './api';
+
+getMovies('popular', '.popular');
+getMovies('top_rated', '.top_rated');
+getMovies('upcoming', '.upcoming');
