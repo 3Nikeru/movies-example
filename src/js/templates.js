@@ -1,4 +1,14 @@
-import { convertDate, generateImageUrl, calculatePopularity } from "./utils";
+import { convertDate, generateImageUrl, calculatePopularity, generateTitle } from "./utils";
+
+export const renderMovies = (movies, type_movie) => (`
+<section class="movie">
+   <h2>${generateTitle(type_movie)}</h2>
+   <div class="${type_movie}">
+   ${movies.map(movie => renderMovie(movie)).join('')}
+   </div>
+</section>`
+);
+
 
 export const renderMovie = ({title, poster_path, vote_average, release_date}) => (`
 <div class="movie">

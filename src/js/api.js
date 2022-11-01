@@ -1,13 +1,12 @@
 import {generateApiUrls} from './utils';
-import {renderMovie} from './templates';
+import {renderMovies} from './templates';
 
-export const getMovies = (path, selector) =>{
+export const getMovies = path =>{
     fetch(generateApiUrls(path))
     .then(res => res.json())
     .then(data => {
         console.log('results', data.results);
 
-        const movies = data.results.map(movie => renderMovie(movie)).join();
-        document.querySelector(selector).innerHTML = movies;
+        document.querySelector('#root').innerHTML = renderMovies(data.results, path);
     })
 }
