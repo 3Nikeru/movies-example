@@ -2,16 +2,10 @@ import { convertDate, generateImageUrl, calculatePopularity } from "./utils";
 
 export const renderMovies = (movies, type_movie) => (`
 <section class="movie">
-   <h2>${type_movie}</h2>
+   <h2>${type_movie.toUpperCase()}</h2>
    <div class="${type_movie}">
    ${movies.map(movie => renderMovie(movie)).join('')}
    </div>
-</section>`
-);
-
-export const renderSearchMovies = (movies) => (`
-<section class="found">
-   ${movies.map(movie => renderMovie(movie)).join('')}
 </section>`
 );
 
@@ -69,3 +63,9 @@ export const renderError = ({status_code, status_message}) => (`
     </div>
 </section>
 `);
+
+export const renderSearchMovies = (movies) => (`
+<section class="found">
+   ${movies.map(movie => renderMovie(movie)).join('')}
+</section>`
+);

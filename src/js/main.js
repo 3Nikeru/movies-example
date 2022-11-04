@@ -1,8 +1,7 @@
-import {getMovies, getMovieDetails} from './api';
-import { renderSearchMovies } from './templates';
+import {getMovies, getMovieDetails, getSearch} from './api';
 export const {API_KEY}= process.env;
 
-window.addEventListener('hashchange', (e) => {
+window.addEventListener('hashchange', () => {
     checkUrl();
 });
 
@@ -12,15 +11,14 @@ function checkUrl(){
     if(hash === '#movieId'){
         getMovieDetails(movieId);
     }else{
-        getMovies('top_rated');
+        getMovies('popular');
     }
 }
 
 checkUrl();
 
-fetch(`https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=legend`)
-.then(res => res.json())
-.then(data =>{
-    console.log('search', data);
-    document.querySelector('#root').innerHTML = renderSearchMovies(data.results);
-})
+document.querySelector('#search').addEventListener('click', () =>{
+    let input_value = document.querySelector('#site-search').value;
+    console.log(input_value)
+    getSearch(input_value);
+});
