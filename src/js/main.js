@@ -6,11 +6,13 @@ window.addEventListener('hashchange', () => {
 });
 
 function checkUrl(){
-    const [hash, movieId] = location.hash.split('=');
+    const [hash, query] = location.hash.split('=');
 
-    if(hash === '#movieId'){
-        getMovieDetails(movieId);
-    }else{
+    if (hash === "#search") {
+        getSearch(query);
+    } else if(hash === '#movieId') {
+        getMovieDetails(query);
+    } else {
         getMovies('popular');
     }
 }
