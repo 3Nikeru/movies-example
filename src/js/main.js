@@ -19,6 +19,7 @@ checkUrl();
 
 document.querySelector('#search').addEventListener('click', () =>{
     let input_value = document.querySelector('#site-search').value;
-    console.log(input_value)
+    window.location.hash = `search=${input_value}`;
+    console.log(input_value);
     getSearch(input_value);
 });
