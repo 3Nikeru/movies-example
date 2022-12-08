@@ -10,13 +10,11 @@ html, body{
     padding: 0;
     background-color: black;
     color: #ffffff;
-    font-family: BebasNeue;
 }
-main{
+#root{
     h2{
         text-align: center;
         padding: 10px;
-        text-transform: uppercase;
         background-color: $ws;
         color: #000000;
     }

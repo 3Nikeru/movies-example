@@ -1,0 +1,54 @@
+.detail_container{
+    margin: 0 10px;
+    .detail_poster_img{
+    width: 100%;
+    }
+    .wrapper{
+        text-align: left;
+        .detail_poster{
+            width: 100%;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        .title{
+            text-align: center;
+            font-size: 32px;
+            font-weight: 600;
+        }
+        .date{
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            color: #72bd03;
+            margin-bottom: 30px;
+        }
+        .overview{
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+        .status{
+            text-align: center;
+            background-color: $color_brand;
+            color: $black;
+            font-weight: 600;
+            border: 2px solid $ws;
+            padding: 10px;
+            margin: 20px 0;
+        }
+        .tags{
+            margin: 20px 0;
+            .tag{
+                padding: 8px;
+                border: 2px solid $color_brand;
+                margin-right: 10px;
+            }
+        }
+        .homepage{
+            margin: 30px 0;
+            a{
+                text-decoration: none;
+                color: $color_brand;
+            }
+        }
+    }
+}
